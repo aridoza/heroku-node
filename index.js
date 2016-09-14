@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
-import App from '../app/containers/App';
+import App from './app/containers/App';
 
 console.log("Hello from React");
 

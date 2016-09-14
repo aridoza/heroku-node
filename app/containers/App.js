@@ -1,8 +1,8 @@
 import React from 'react';
 
 const App = React.createClass({
-  console.log("React is connected");
   render() {
+      console.log("React is connected");
     return (
       <div>
         <h1>Hello from the React world!</h1>
