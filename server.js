@@ -1,18 +1,12 @@
-const mongodb = require('mongodb');
 const express = require('express');
 const router = express.Router();
-const cors = require('cors');
-const bodyParser = require('body-parser');
-const mongoClient = mongodb.MongoClient;
 const app = express();
 
 // set PORT of the application
 // process.env.PORT lets the port be set by Heroku
 const port = process.env.PORT || 8080;
 
-app.use(cors());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
