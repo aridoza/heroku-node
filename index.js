@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
+import App from '../app/containers/App';
 
 console.log("Hello from React");
 
 ReactDOM.render(
-  <h1>Hello from React!</h1>,
+  <App />,
   document.getElementById('scotchy-app')
 );
