@@ -1,7 +1,7 @@
 {
   "name": "heroku-node",
   "description": "Sample Node to Heroku app",
-  "main": "index.html",
+  "main": "server.js",
   "repository": "",
   "scripts": {
     "start": "node server.js"
@@ -9,10 +9,7 @@
   "author": " ",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "~2.0",
-    "kerberos": "~0.0",
     "axios": "^0.9.1",
-    "lodash": "^4.8.2",
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
