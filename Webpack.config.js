@@ -1,8 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: path.join(__dirname, '/views/index.ejs'),
-  filename: 'index.ejs',
+  template: path.join(__dirname, '/views/index.html'),
+  filename: 'index.html',
   inject: 'body'
 })
 
