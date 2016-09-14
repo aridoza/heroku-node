@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
-import routes from './app/config/routes';
+import routes from './config/routes';
 
 ReactDOM.render(
-  <App/>,
+  routes,
   document.getElementById('scotchy-app')
 );
