@@ -1,8 +1,5 @@
 const express = require('express');
-const router = express.Router();
 const app = express();
-const mongodb = require('mongodb');
-const cors = require('cors');
 
 // set PORT of the application
 // process.env.PORT lets the port be set by Heroku
@@ -14,7 +11,7 @@ const port = process.env.PORT || 8080;
 app.set('view engine', 'ejs');
 
 // make express look in the public directory for assets (css/js/img)
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/public'));
 
 //set the home page route
 app.get('/', function(req, res){
