@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 
 // make express look in the public directory for assets (css/js/img)
-// app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/'));
 
 //set the home page route
 app.get('/', function(req, res){
