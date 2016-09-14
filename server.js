@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const app = express();
+const mongodb = require('mongodb');
+const cors = require('cors');
 
 // set PORT of the application
 // process.env.PORT lets the port be set by Heroku
