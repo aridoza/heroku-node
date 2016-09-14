@@ -5,6 +5,6 @@ import routes from './config/routes';
 import App from './containers/App';
 
 ReactDOM.render(
-  routes,
+  <App />,
   document.getElementById('scotchy-app')
 );
