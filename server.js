@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from '../app/containers/App';
 
 // set PORT of the application
 // process.env.PORT lets the port be set by Heroku
@@ -23,3 +26,9 @@ app.get('/', function(req, res){
 app.listen(port, function() {
   console.log('Our app is running on http://localhost:' + port);
 });
+
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('scotchy-app')
+);
