@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 // set the view engine to ejs
-// app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
 // make express look in the public directory for assets (css/js/img)
 // app.use(express.static(__dirname + '/'));
